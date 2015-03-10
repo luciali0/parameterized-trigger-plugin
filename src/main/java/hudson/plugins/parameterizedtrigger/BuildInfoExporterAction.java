@@ -200,7 +200,7 @@ public class BuildInfoExporterAction implements EnvironmentContributingAction {
    *
    * @return a list of builds that are triggered by this build. May contains null if a project or a build is deleted.
    */
-  @Exported(visibility = 0, inline=true)
+  @Exported(visibility = 1, inline=true)
   public List<AbstractBuild<?, ?>> getTriggeredBuilds() {
 
     List<AbstractBuild<?, ?>> builds = new ArrayList<AbstractBuild<?, ?>>();
@@ -222,7 +222,7 @@ public class BuildInfoExporterAction implements EnvironmentContributingAction {
    *
    * @return List of Projects that are triggered by this build. May contains null if a project is deleted.
    */
-  @Exported(visibility = 0, inline=true)
+  @Exported(visibility = 1, inline=true)
   public List<AbstractProject<?, ?>> getTriggeredProjects() {
     List<AbstractProject<?, ?>> projects = new ArrayList<AbstractProject<?, ?>>();
 
